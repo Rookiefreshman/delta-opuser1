@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
- * @author Schumiyi
+ * @author 石祥
  * @date 2020/4/28
  */
 @EqualsAndHashCode(callSuper = true)

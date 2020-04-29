@@ -15,7 +15,6 @@ import java.util.List;
 @Service
 public class UserLoginServiceImpl implements UserLoginService {
 
-//    @Resource
     @Autowired
     private UserDao userDao;
 
