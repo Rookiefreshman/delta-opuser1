@@ -38,11 +38,14 @@ public class UserLoginServiceImpl implements UserLoginService {
         if(password.equals(ReturnPassword))
         {
             log.info("密码正确");
-//            return (UserVo) users;
+            UserVo userVo2 = new UserVo();
+            userVo2.setUsername(users.get(0).getUsername());
+            userVo2.setPassword(users.get(0).getPassword());
+            return userVo2;
         }
-        UserVo userVo = new UserVo();
-        userVo.setUsername(users.get(0).getUsername());
-        userVo.setPassword(users.get(0).getPassword());
-        return userVo;
+        else {
+            UserVo userVo1 = new UserVo();
+            return userVo1;
+        }
     }
 }
